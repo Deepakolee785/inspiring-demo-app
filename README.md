@@ -1,14 +1,9 @@
 ## Installation process
 git clone https://github.com/Deepakolee785/inspiring-demo-app.git
 
-## dependencies install
+## dependencies install and start
 cd inspiring-demo-app
-### server dependencies install
-npm run server-install
-
-### client dependies install
-npm install
-
-## start app at localhost:3000
-npm run dev
+npm run server-install -> for server
+npm install -> for client
+npm run dev -> start app
 
