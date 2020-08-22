@@ -70,7 +70,7 @@ export default (state = initialState, action) => {
     case LOADING:
       return {
         ...state,
-        loading: !state.loading,
+        loading: true,
       }
 
     default:

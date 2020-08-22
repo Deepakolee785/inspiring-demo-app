@@ -39,7 +39,7 @@ const Login = () => {
   const dispatch = useDispatch()
   const error = useSelector((state) => state.auth.error)
   const loading = useSelector((state) => state.auth.loading)
-  console.log(loading)
+  // console.log(loading)
   return (
     <div className={classes.root}>
       <Card className={classes.card}>

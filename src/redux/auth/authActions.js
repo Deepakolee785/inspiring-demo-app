@@ -27,7 +27,6 @@ export const register = ({ name, email, password }) => async (dispatch) => {
     // console.log(err.response.data.msg)
     dispatch({ type: REGISTER_FAILURE, payload: err.response.data.msg })
   }
-  setLoading()
 }
 
 export const login = ({ email, password }) => async (dispatch) => {
@@ -48,7 +47,6 @@ export const login = ({ email, password }) => async (dispatch) => {
     // console.log(err.response.data.msg)
     dispatch({ type: LOGIN_FAILURE, payload: err.response.data.msg })
   }
-  setLoading()
 }
 
 export const logout = () => (dispatch) => {
