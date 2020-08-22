@@ -1,5 +1,6 @@
+// imports
 import axios from 'axios'
-
+// action types
 import {
   REGISTER_SUCCESS,
   REGISTER_FAILURE,
@@ -9,6 +10,7 @@ import {
   LOADING,
 } from './authTypes'
 
+// user register action
 export const register = ({ name, email, password }) => async (dispatch) => {
   // console.log(name, email, password)
   setLoading()
@@ -29,6 +31,7 @@ export const register = ({ name, email, password }) => async (dispatch) => {
   }
 }
 
+// user login action
 export const login = ({ email, password }) => async (dispatch) => {
   // console.log(email, password)
   setLoading()
@@ -49,10 +52,12 @@ export const login = ({ email, password }) => async (dispatch) => {
   }
 }
 
+// logout action
 export const logout = () => (dispatch) => {
   dispatch({ type: LOGOUT })
 }
 
+// set loading action
 export const setLoading = () => (dispatch) => {
   dispatch({ type: LOADING })
 }

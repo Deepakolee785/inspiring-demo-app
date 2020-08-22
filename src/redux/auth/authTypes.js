@@ -1,3 +1,4 @@
+// auth types decelaration
 export const REGISTER_SUCCESS = 'REGISTER_SUCCESS'
 export const REGISTER_FAILURE = 'REGISTER_FAILURE'
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'

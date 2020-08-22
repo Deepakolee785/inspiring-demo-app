@@ -2,8 +2,9 @@ import React from 'react'
 import { Container, Grid, Typography, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 
+// assets
 import home_svg from '../../assets/home_svg.svg'
-
+//styles
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: '4rem',
@@ -29,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Home = () => {
+  // style classes
   const classes = useStyles()
   return (
     <Container className={classes.root}>

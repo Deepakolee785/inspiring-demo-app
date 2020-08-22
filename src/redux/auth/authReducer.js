@@ -1,3 +1,4 @@
+// action types
 import {
   REGISTER_SUCCESS,
   REGISTER_FAILURE,
@@ -7,6 +8,7 @@ import {
   LOADING,
 } from './authTypes'
 
+// initial auth state
 const initialState = {
   token: localStorage.getItem('token'),
   isAuthenticated: localStorage.getItem('token') ? true : false,

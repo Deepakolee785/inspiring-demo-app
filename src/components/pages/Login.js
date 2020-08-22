@@ -9,9 +9,10 @@ import { Link } from 'react-router-dom'
 
 import { login } from '../../redux/actions'
 
+// assets
 import login_svg from '../../assets/login_bg.svg'
 import loading_gif from '../../assets/loading.gif'
-
+// styles
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
@@ -35,7 +36,9 @@ const useStyles = makeStyles(() => ({
 }))
 
 const Login = () => {
+  // styles
   const classes = useStyles()
+
   const dispatch = useDispatch()
   const error = useSelector((state) => state.auth.error)
   const loading = useSelector((state) => state.auth.loading)

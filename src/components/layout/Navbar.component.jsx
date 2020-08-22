@@ -14,10 +14,10 @@ import { useDispatch } from 'react-redux'
 
 import { logout } from '../../redux/actions'
 
-//
+//assets
 import logo from '../../assets/logo.svg'
 import { NavLink, Link } from 'react-router-dom'
-
+// styles
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -51,10 +51,11 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Navbar = () => {
-  const dispatch = useDispatch()
-
-  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
+  // styles
   const classes = useStyles()
+
+  const dispatch = useDispatch()
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated)
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
@@ -70,6 +71,7 @@ const Navbar = () => {
     dispatch(logout())
     handleClose()
   }
+  // nav items
   const _navItems = [
     { name: 'Home', route: '/' },
     { name: 'Gallery', route: '/gallery' },
@@ -99,13 +101,13 @@ const Navbar = () => {
             </Hidden>
 
             <span style={{ flex: 1 }}></span>
-
+            {/*  */}
             {isAuthenticated ? (
+              // Auth Routes
               <div>
                 <IconButton
                   aria-label="account of current user"
                   aria-controls="menu-appbar"
-                  //   aria-haspopup="true"
                   onClick={handleMenu}
                   color="inherit"
                 >
@@ -136,6 +138,7 @@ const Navbar = () => {
                 </Menu>
               </div>
             ) : (
+              // Non auth routes
               <div>
                 <Link to="/register">
                   <Button

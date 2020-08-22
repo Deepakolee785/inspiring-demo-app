@@ -6,10 +6,11 @@ import FormikMuiField from '../common/FormikMuiField'
 import { register } from '../../redux/actions'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
-
-import register_svg from '../../assets/register_bgsvg.svg'
 import { Link } from 'react-router-dom'
 
+//assets
+import register_svg from '../../assets/register_bgsvg.svg'
+// styles
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
@@ -33,6 +34,7 @@ const useStyles = makeStyles(() => ({
 }))
 
 const Register = () => {
+  // style classes
   const classes = useStyles()
 
   const dispatch = useDispatch()

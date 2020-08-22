@@ -1,9 +1,9 @@
 import React from 'react'
 import { Field } from 'formik'
 import { TextField } from '@material-ui/core'
-
 import { makeStyles } from '@material-ui/core/styles'
 
+// styles
 const useStyles = makeStyles((theme) => ({
   root: {
     marginBottom: '1rem',
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const FormikMuiField = ({ label, name, type, error = '' }) => {
+  // styles
   const classes = useStyles()
   return (
     <div>
