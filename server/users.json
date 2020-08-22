@@ -1,1 +1,16 @@
-{"users":[{"id":1,"name":"test","email":"test@email.com","password":"test123"},{"id":2,"name":"ram","email":"ram@email.com","password":"123456"},{"id":3,"name":"deepak","email":"deepak@gmail.com","password":"123456"},{"id":4,"name":"test1","email":"test1@gmail.com","password":"12345"},{"id":5,"name":"ram","email":"ram@gmail.com","password":"123456"},{"id":6,"name":"test","email":"test@gmail.com","password":"123456789"},{"id":7,"name":"test","email":"deepak1@gmail.com","password":"123456"},{"id":8,"name":"abc","email":"abc@gmail.com","password":"123456"},{"id":9,"name":"abc","email":"abc1@gmail.com","password":"12345678"}]}
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "test",
+      "email": "test@email.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "deepak",
+      "email": "deepak@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
