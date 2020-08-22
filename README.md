@@ -1,3 +1,15 @@
+# Screenshots
+### Home page
+<img href="https://raw.githubusercontent.com/Deepakolee785/inspiring-demo-app/master/screenshots/Home-page.png"/>
+<img href="https://raw.githubusercontent.com/Deepakolee785/inspiring-demo-app/master/screenshots/Home-page2.png"/>
+
+### Login page
+<img href="https://raw.githubusercontent.com/Deepakolee785/inspiring-demo-app/master/screenshots/login-page.png"/>
+
+
+### Register page
+<img href="https://raw.githubusercontent.com/Deepakolee785/inspiring-demo-app/master/screenshots/Register-page.png"/>
+
 # Technology used:
 1. React
 2. Redux
